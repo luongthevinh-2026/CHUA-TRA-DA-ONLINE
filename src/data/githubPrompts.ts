@@ -56,9 +56,21 @@ chua-online-3d/
 │   └── main.js                 # Vòng lặp Three.js, camera, ánh sáng, khởi động
 ├── index.html
 ├── package.json
-├── vite.config.js
+├── vite.config.js              # Cực kỳ quan trọng: phải có base: './' để link GitHub Pages không bị trắng màn hình
 ├── CLAUDE.md                   # Hướng dẫn kiến trúc cho Claude Code / AI Agents
 └── README.md                   # Giới thiệu dự án, hướng dẫn chơi và cách deploy
+\`\`\`
+
+> ⚠️ **LƯU Ý QUAN TRỌNG VỀ ĐƯỜNG DẪN GITHUB PAGES**:
+> Trong file \`vite.config.js\`, bắt buộc phải đặt \`base: './'\`. Nếu không có dòng này, link GitHub Pages sẽ bị lỗi màn hình trắng xóa do tìm file \`/assets/...\` thay vì \`/tên-repo/assets/...\`.
+
+\`\`\`javascript
+// vite.config.js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: './', // Bắt buộc cho GitHub Pages!
+});
 \`\`\`
 
 ---

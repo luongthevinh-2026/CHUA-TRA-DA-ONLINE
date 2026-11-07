@@ -60,12 +60,12 @@ export default function App() {
             onClick={() => setActiveTab('guide')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
               activeTab === 'guide'
-                ? 'bg-amber-600 text-white shadow-md'
-                : 'text-stone-400 hover:text-stone-200'
+                ? 'bg-red-600 text-white shadow-md'
+                : 'text-amber-400 hover:text-amber-300'
             }`}
           >
             <Github className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Hướng Dẫn Git</span>
+            <span>Sửa Lỗi Link GitHub (404/Trắng)</span>
           </button>
         </div>
       </header>
