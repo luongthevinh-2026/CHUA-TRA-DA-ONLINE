@@ -1,0 +1,6 @@
+{
+  "name": "Chùa Online 3D - GitHub Claude Prompt & Trải nghiệm 3D",
+  "description": "Bản prompt chuẩn hoá cho Claude on GitHub & Trải nghiệm chùa 3D online với Three.js, 10 chỗ ngồi, 5 hành động tâm linh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
